@@ -1,0 +1,2488 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет - магазин BigStore | Home</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container container--big">
+
+      <div class="header__top">
+
+        <div class="header__contacts">
+
+          <div class="header__phones">
+
+            <svg class="header__icon">
+              <use xlink:href="images/sprite.svg#tel"></use>
+            </svg>
+
+            <p class="header__modal">
+              <a class="header__modal-link" href="#contact" rel="modal:open">
+
+                +38(099) 444-25-87
+
+              </a>
+            </p>
+
+            <div id="contact" class="modal-box">
+
+              <span class="modal-title">
+
+                Контактные телефоны
+
+              </span>
+
+              <address class="contact">
+
+
+                <span class="contact__subtitle">
+
+                  Консультации и заказы
+
+                </span>
+
+                <div class="contact__inner">
+
+                  <a class="contact__text" href="tel:+380994442587">
+
+                    +38(099)444-25-87
+
+                  </a>
+
+                  <a class="contact__text" href="tel:+380994442587">
+
+                    +38(099)444-25-87
+
+                  </a>
+
+                </div>
+
+                <span class="contact__subtitle contact__subtitle--mailbox">
+
+                  Вопросы и пожелания
+
+                </span>
+
+                <a class="contact__text" href="mailto:bigstore.kharkov@gmail.com">
+
+                  bigstore.kharkov@gmail.com
+
+                </a>
+
+              </address>
+
+            </div>
+
+          </div>
+
+          <ul class="header__links">
+
+            <li class="header__item">
+
+              <a class="header__link" href="#">
+
+                Контакты
+
+              </a>
+
+            </li>
+
+            <li class="header__item">
+
+              <a class="header__link" href="#">
+
+                Помощь
+
+              </a>
+
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="header__inner">
+
+          <div class="header__languages">
+
+            <button class="header__lang header__lang--active">
+
+              RU
+
+            </button>
+
+            <button class="header__lang">
+
+              UA
+
+            </button>
+
+            <button class="header__lang">
+
+              ENG
+
+            </button>
+
+          </div>
+
+          <select class="header__city" name="select">
+
+              <option value="value1" selected>Харьков</option>
+
+              <option value="value2">Значение 2</option>
+
+          </select>
+
+          <div class="header__user">
+
+            <svg class="header__user-icon">
+              <use xlink:href="images/sprite.svg#user"></use>
+            </svg>
+
+            <p class="header__modal">
+              <a class="header__modal-link" href="#login" rel="modal:open">
+
+                Войдите в личный кабинет
+
+              </a>
+            </p>
+
+            <div id="login" class="modal-box">
+
+              <div class="login">
+
+                <span class="modal-title">
+
+                  Вход
+
+                </span>
+
+                <form class="login__form" action="#">
+
+                  <label for="log-u" class="login__label">
+
+                    Имя, эл. почта или телефон
+
+                    <input id="log-u" class="login__input" type="email" name="email" required>
+
+                  </label>
+
+                  <label for="log-p" class="login__label">
+
+                    Пароль
+
+                    <input id="log-p" class="login__input" type="password" name="password" required>
+
+                  </label>
+
+                  <div class="login__inner-btn">
+
+                    <button class="login__btn" type="submit">
+
+                      Войти
+
+                    </button>
+
+                    <a class="login__btn login__btn--create" href="registration.html">
+
+                      Регистрация
+
+                    </a>
+
+                  </div>
+
+                  <div class="login__inner-box">
+
+                    <div class="login__label-box">
+
+                      <label for="check-r" class="login__label login__label--box">
+
+                        <input id="check-r" class="login__input-checkbox" type="checkbox" name="checkbox">
+
+                        Запомнить меня
+
+                      </label>
+
+                    </div>
+
+                    <a class="login__error" href="recovery.html">
+
+                      Забыли пароль?
+
+                    </a>
+
+                  </div>
+
+                </form>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="header__bottom">
+
+        <a class="logo" href="index.html">
+
+          <img class="logo__img" src="images/header/logo-line.png" alt="logo images">
+
+        </a>
+
+        <button class="header__menu-dropdown">
+
+          <svg class="header__icon-dropdown">
+            <use xlink:href="images/sprite.svg#menu-dropdown"></use>
+          </svg>
+
+          <span class="header__btn-dropdown">
+
+            Каталог товаров
+
+          </span>
+
+        </button>
+
+        <form class="header__form" action="#">
+
+          <label for="h-search" class="header__label">Search</label>
+
+          <input id="h-search" class="header__form-input" type="text" name="Search" placeholder="Поиск..." required>
+
+          <button class="header__searchform-microphone" type="button" aria-label="Голосовой набор">
+
+            <svg class="header__micon-icon">
+              <use xlink:href="images/sprite.svg#micon"></use>
+            </svg>
+
+          </button>
+
+          <button class="header__searchform-btn" type="submit">
+
+            Найти
+
+          </button>
+
+        </form>
+
+        <div class="header__order">
+
+          <a class="header__compare" href="#">
+
+            <svg class="header__compare-icon">
+              <use xlink:href="images/sprite.svg#compare"></use>
+            </svg>
+
+          </a>
+
+          <a class="header__basket" href="#">
+
+            <svg class="header__basket-icon">
+              <use xlink:href="images/sprite.svg#basket"></use>
+            </svg>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <section class="categories">
+
+      <div class="container container--big">
+
+        <div class="menu-popup">
+
+          <nav class="menu">
+
+            <ul class="topmenu">
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Гаджеты
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадрокоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Компьютеры
+
+                </a>
+
+                <ul class="submenu">
+
+
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Фото
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  TV
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Аудио
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Бытовая техника
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Климат
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Дом
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Детские товары
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Авто
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Инструмент
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Туризм
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Спорт
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+              <li class="topmenu__item">
+
+                <a class="topmenu__link" href="#">
+
+                  Еще+
+
+                </a>
+
+                <ul class="submenu">
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#smartphone"></use>
+                      </svg>
+
+                      Мобильные
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#phone-case"></use>
+                      </svg>
+
+                      Чехлы
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#headphones"></use>
+                      </svg>
+
+                      Наушники
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#watch"></use>
+                      </svg>
+
+                      Умные часы и <br> браслеты
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#powerbank"></use>
+                      </svg>
+
+                      Powerbank
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#columns"></use>
+                      </svg>
+
+                      Портативные <br> колонки
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#camera"></use>
+                      </svg>
+
+                      Action камеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#drone"></use>
+                      </svg>
+
+                      Квадракоптеры
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#memory"></use>
+                      </svg>
+
+                      Карта памяти
+
+                    </a>
+                  </li>
+
+                  <li class="submenu__item">
+                    <a class="submenu__link" href="#">
+                      <svg class="submenu__icon">
+                        <use xlink:href="images/sprite.svg#circle"></use>
+                      </svg>
+
+                      Все разделы
+
+                    </a>
+                  </li>
+
+                </ul>
+
+              </li>
+
+            </ul>
+
+          </nav>
+
+        </div>
+
+        <div class="categories__wrapper">
+
+          <div class="categories__slider-top slider-top">
+
+            <div class="slider-top__inner">
+
+              <div class="slider-top__items">
+
+                <div class="slider-top__item">
+
+                  <div class="slider-top__top">
+
+                    <div class="slider-top__left">
+
+                      <div class="slider-top__first">
+
+                        <div class="slider-top__box slider-top__box--blue">
+
+                          <a class="slider-top__link">
+
+                            <span class="slider-top__title">
+                              Умные часы <br>
+                              и <br>
+                              браслеты
+                            </span>
+
+                            <img class="slider-top__img" src="images/slider/watch.png" alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+                        <div class="slider-top__box slider-top__box--white">
+
+                          <a class="slider-top__link">
+
+                            <span class="slider-top__title">
+                              Умные часы <br>
+                              и <br>
+                              браслеты
+                            </span>
+
+                            <img class="slider-top__img" src="images/slider/watch.png" alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+
+                      </div>
+
+                      <div class="slider-top__second">
+
+                        <div class="slider-top__box slider-top__box--red">
+
+                          <a class="slider-top__link slider-top__link--middle">
+
+                            <span class="slider-top__title slider-top__title--middle">
+                              Планшеты
+                            </span>
+
+                            <img class="slider-top__img slider-top__img--middle" src="images/slider/book.png"
+                              alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="slider-top__right">
+
+                      <div class="slider-top__box slider-top__box--bluelight">
+
+                        <a class="slider-top__link slider-top__link--big">
+
+                          <span class="slider-top__title slider-top__title--big">
+                            Портативные <br>
+                            колонки
+                          </span>
+
+                          <img class="slider-top__img slider-top__img--big" src="images/slider/columns.png"
+                            alt="photo slider">
+
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="slider-top__bottom">
+
+                    <div class="slider-top__box slider-top__box--yellow">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Наушники
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/headphones.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                    <div class="slider-top__box slider-top__box--grey">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Квадро- <br>
+                          коптеры
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/drone.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+
+                    <div class="slider-top__box slider-top__box--red">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Action камеры
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/camera.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                    <div class="slider-top__box slider-top__box--blue">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Мобильные
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/mobile.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+                <div class="slider-top__item">
+
+                  <div class="slider-top__top">
+
+                    <div class="slider-top__left">
+
+                      <div class="slider-top__first">
+
+                        <div class="slider-top__box slider-top__box--blue">
+
+                          <a class="slider-top__link">
+
+                            <span class="slider-top__title">
+                              Умные часы <br>
+                              и <br>
+                              браслеты
+                            </span>
+
+                            <img class="slider-top__img" src="images/slider/watch.png" alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+                        <div class="slider-top__box slider-top__box--white">
+
+                          <a class="slider-top__link">
+
+                            <span class="slider-top__title">
+                              Умные часы <br>
+                              и <br>
+                              браслеты
+                            </span>
+
+                            <img class="slider-top__img" src="images/slider/watch.png" alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+
+                      </div>
+
+                      <div class="slider-top__second">
+
+                        <div class="slider-top__box slider-top__box--red">
+
+                          <a class="slider-top__link slider-top__link--middle">
+
+                            <span class="slider-top__title slider-top__title--middle">
+                              Планшеты
+                            </span>
+
+                            <img class="slider-top__img slider-top__img--middle" src="images/slider/book.png"
+                              alt="photo slider">
+
+                          </a>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+
+                    <div class="slider-top__right">
+
+                      <div class="slider-top__box slider-top__box--bluelight">
+
+                        <a class="slider-top__link slider-top__link--big">
+
+                          <span class="slider-top__title slider-top__title--big">
+                            Портативные <br>
+                            колонки
+                          </span>
+
+                          <img class="slider-top__img slider-top__img--big" src="images/slider/columns.png"
+                            alt="photo slider">
+
+                        </a>
+
+                      </div>
+
+                    </div>
+
+                  </div>
+
+                  <div class="slider-top__bottom">
+
+                    <div class="slider-top__box slider-top__box--yellow">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Наушники
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/headphones.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                    <div class="slider-top__box slider-top__box--grey">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Квадро- <br>
+                          коптеры
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/drone.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+
+                    <div class="slider-top__box slider-top__box--red">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Action камеры
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/camera.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                    <div class="slider-top__box slider-top__box--blue">
+
+                      <a class="slider-top__link">
+
+                        <span class="slider-top__title">
+                          Мобильные
+                        </span>
+
+                        <img class="slider-top__img" src="images/slider/mobile.png" alt="photo slider">
+
+                      </a>
+
+                    </div>
+
+                  </div>
+
+
+                </div>
+
+
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="categories__slider-bottom slider-bottom">
+
+            <h2 class="title categories__title">
+
+              Популярные товары
+
+            </h2>
+
+            <div class="slider-bottom__items">
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+              <article class="card-top" href="#">
+
+                <div class="card-top__content">
+
+                  <img class="card-top__img" src="images/slider/makita.png" alt="image screwdriver">
+
+                  <h3 class="card-top__title">
+                    Шуруповёрт <br> Makita
+                  </h3>
+
+                  <span class="card-top__price">
+                    2800.00 грн
+                  </span>
+
+                </div>
+
+
+                <a class="card-top__link" href="#">Сlick areas</a>
+
+              </article>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      </div>
+
+    </section>
+
+    <section class="catalog">
+
+      <div class="container">
+
+        <div class="catalog__title title">
+
+          Каталог товаров
+
+        </div>
+
+        <div class="catalog__inner">
+
+          <ul class="catalog__menu">
+
+            <li class="catalog__item">
+
+              <ul class="catalog__submenu">
+
+                Гаджеты и Связь
+
+              </ul>
+
+            </li>
+
+            <li class="catalog__item">
+
+
+
+            </li>
+
+            <li class="catalog__item">
+
+
+
+            </li>
+
+            <li class="catalog__item">
+
+
+
+            </li>
+
+            <li class="catalog__item">
+
+
+
+            </li>
+
+
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+
+
+  </footer>
+
+  <script src="js/main.min.js"></script>
+
+</body>
+
+</html>

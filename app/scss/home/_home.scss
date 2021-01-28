@@ -1,0 +1,95 @@
+@import "home/categories";
+@import "home/catalog";
+
+.menu {
+  display: none;
+  width: 100%;
+  font-size: 18px;
+  background: white;
+}
+.menu--active {
+  display: flex;
+}
+
+.submenu {
+  position: absolute;
+  top: 155px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 20px;
+  background-color: white;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  z-index: 10;
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  visibility: hidden;
+  opacity: 0;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      color: blue;
+    }
+  }
+
+  &__icon {
+    fill: $icon;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+
+    &:hover {
+      fill: blue;
+    }
+  }
+}
+
+.topmenu {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 20px 0 0;
+
+  &__item {
+    padding-bottom: 16px;
+    border-bottom: 4px solid transparent;
+
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    &:hover {
+      border-color: red;
+    }
+  }
+
+  &__link {
+    color: $title;
+    transition: color 0.3s;
+    &:hover {
+      color: red;
+    }
+  }
+
+  &__item {
+    &:hover .submenu {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

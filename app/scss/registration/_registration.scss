@@ -1,0 +1,163 @@
+.registration {
+  padding-top: 40px;
+
+  &__wrapper {
+    min-width: 400px;
+    max-width: 34%;
+    margin: 0 auto;
+  }
+
+  .modal-title {
+    &::after {
+      min-width: 440px;
+    }
+  }
+
+  &__form {
+    padding-top: 25px;
+  }
+
+  &__label {
+    font-size: 12px;
+    line-height: 0.8;
+  }
+
+  &__inner-phone {
+    display: flex;
+  }
+
+  &__item {
+    
+    &--social {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 25px;
+    font-size: 16px;
+    text-align: center;
+    color: $title;
+  }
+
+  &__form,
+  &__label,
+  &__item--form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__input {
+    width: 100%;
+    min-width: 440px;
+    max-width: 40%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid $default;
+    border-radius: 3px;
+    outline: white;
+    transition: box-shadow 0.3s;
+
+    &:placeholder-shown {
+      color: $default;
+    }
+
+    @include _560 {
+      width: 100%;
+      min-width: 280px;
+    }
+
+    &:hover {
+      box-shadow: inset 1px 1px 3px rgba(154, 147, 140, 0.5),
+        1px 1px 5px rgba(255, 255, 255, 1);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 1px #a3bbc8;
+    }
+
+    &--country {
+      min-width: 200px;
+    }
+
+    &--phone {
+      min-width: 240px;
+    }
+
+    &--pass {
+      margin-bottom: 3px;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    margin: 12px 0 35px;
+    font-size: 18px;
+    line-height: 3;
+    text-align: center;
+    background-color: $default;
+    color: white;
+    border: 1px solid $default;
+    border-radius: 3px;
+    @extend %rubik-500;
+    transition: box-shadow 0.3s, border-color 0.5s;
+
+    &:hover {
+      background-color: #7f9cac;
+      box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.5);
+      border-color: #7f9cac;
+    }
+
+    &--create {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      color: $title;
+    }
+  }
+
+  &__btn-icon {
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+
+  &__error {
+    margin-top: -20px;
+    text-decoration: none;
+    transition: text-decoration 0.5s;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__line {
+    margin-top: 25px;
+    text-align: center;
+    &::before{
+      content: "-";
+      margin-right: 5px;
+    }
+
+    &::after {
+      content: "-";
+      margin-left: 5px;
+    }
+  }
+
+  &__text {
+    margin: 20px 0 -5px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет магазин | Registration</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+  <div class="container container--big">
+
+    <div class="header__top">
+
+      <div class="header__contacts">
+
+        <div class="header__phones">
+
+          <svg class="header__icon">
+            <use xlink:href="images/sprite.svg#tel"></use>
+          </svg>
+
+          <p class="header__modal">
+            <a class="header__modal-link" href="#contact" rel="modal:open">
+              
+              +38(099) 444-25-87
+
+            </a>
+          </p>
+
+          <div id="contact" class="modal-box">
+
+  <span class="modal-title">
+
+    Контактные телефоны
+
+  </span>
+
+  <address class="contact">
+
+
+    <span class="contact__subtitle">
+
+      Консультации и заказы
+
+    </span>
+
+    <div class="contact__inner">
+
+      <a class="contact__text" href="tel:+380994442587">
+
+        +38(099)444-25-87
+
+      </a>
+
+      <a class="contact__text" href="tel:+380994442587">
+
+        +38(099)444-25-87
+
+      </a>
+
+    </div>
+
+    <span class="contact__subtitle contact__subtitle--mailbox">
+
+      Вопросы и пожелания
+
+    </span>
+
+    <a class="contact__text" href="mailto:bigstore.kharkov@gmail.com">
+
+      bigstore.kharkov@gmail.com
+
+    </a>
+
+  </address>
+
+</div>
+
+        </div>
+
+        <ul class="header__links">
+
+          <li class="header__item">
+
+            <a class="header__link" href="#">
+
+              Контакты
+
+            </a>
+
+          </li>
+
+          <li class="header__item">
+
+            <a class="header__link" href="#">
+
+              Помощь
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="header__inner">
+
+        <div class="header__languages">
+
+          <button class="header__lang header__lang--active">
+
+            RU
+
+          </button>
+
+          <button class="header__lang">
+
+            UA
+
+          </button>
+
+          <button class="header__lang">
+
+            ENG
+
+          </button>
+
+        </div>
+
+        <select class="header__city" name="select">
+
+            <option value="value1" selected>Харьков</option>
+
+            <option value="value2">Значение 2</option>
+
+        </select>
+
+        <div class="header__user">
+
+          <svg class="header__user-icon">
+            <use xlink:href="images/sprite.svg#user"></use>
+          </svg>
+
+          <p class="header__modal">
+            <a class="header__modal-link" href="#login" rel="modal:open">
+          
+              Войдите в личный кабинет
+          
+            </a>
+          </p>
+
+          <div id="login" class="modal-box">
+
+  <div class="login">
+
+    <span class="modal-title">
+
+      Вход
+
+    </span>
+
+    <form class="login__form" action="#">
+
+      <label for="log-u" class="login__label">
+
+        Имя, эл. почта или телефон
+
+        <input id="log-u" class="login__input" type="email" name="email" required>
+
+      </label>
+
+      <label for="log-p" class="login__label">
+
+        Пароль
+
+        <input id="log-p" class="login__input" type="password" name="password" required>
+
+      </label>
+
+      <div class="login__inner-btn">
+
+        <button class="login__btn" type="submit">
+
+          Войти
+
+        </button>
+
+        <a class="login__btn login__btn--create" href="registration.html">
+
+          Регистрация
+
+        </a>
+
+      </div>
+
+      <div class="login__inner-box">
+
+        <div class="login__label-box">
+
+          <label for="check-r" class="login__label login__label--box">
+
+            <input id="check-r" class="login__input-checkbox" type="checkbox" name="checkbox">
+
+            Запомнить меня
+
+          </label>
+
+        </div>
+
+        <a class="login__error" href="recovery.html">
+
+          Забыли пароль?
+
+        </a>
+
+      </div>
+
+    </form>
+
+  </div>
+
+</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header__bottom">
+
+      <a class="logo" href="index.html">
+
+        <img class="logo__img" src="images/header/logo-line.png" alt="logo images">
+
+      </a>
+
+      <button class="header__menu-dropdown">
+
+        <svg class="header__icon-dropdown">
+          <use xlink:href="images/sprite.svg#menu-dropdown"></use>
+        </svg>
+
+        <span class="header__btn-dropdown">
+          
+          Каталог товаров
+        
+        </span>
+
+      </button>
+
+      <form class="header__form" action="#">
+
+        <label for="h-search" class="header__label">Search</label>
+
+        <input id="h-search" class="header__form-input" type="text" name="Search" placeholder="Поиск..." required>
+
+        <button class="header__searchform-microphone" type="button" aria-label="Голосовой набор">
+
+          <svg class="header__micon-icon">
+            <use xlink:href="images/sprite.svg#micon"></use>
+          </svg>
+
+        </button>
+
+        <button class="header__searchform-btn" type="submit">
+
+          Найти
+
+        </button>
+
+      </form>
+
+      <div class="header__order">
+
+        <a class="header__compare" href="#">
+
+          <svg class="header__compare-icon">
+            <use xlink:href="images/sprite.svg#compare"></use>
+          </svg>
+
+        </a>
+
+        <a class="header__basket" href="#">
+
+          <svg class="header__basket-icon">
+            <use xlink:href="images/sprite.svg#basket"></use>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>
+
+  <main class="main">
+
+    <div class="registration">
+
+      <div class="container">
+
+        <div class="registration__wrapper">
+
+          <span class="modal-title registration__modal-title">
+
+            Регистрация
+
+          </span>
+
+          <form class="registration__form" action="#">
+
+            <div class="registration__item registration__item--form">
+
+              <label for="reg-namef" class="registration__label">
+
+                Имя
+
+                <input id="reg-namef" class="registration__input" type="firstname" name="firstname" required>
+
+              </label>
+
+              <label for="reg-namel" class="registration__label">
+
+                Фамилия
+
+                <input id="reg-namel" class="registration__input" type="lastname" name="lastname" required>
+
+              </label>
+
+              <label for="reg-tel" class="registration__label">
+
+                Телефон
+
+                <div class="registration__inner-phone">
+
+                  <select id="country" class="registration__input registration__input--country">
+                    <option value="ua">Украина +380</option>
+                    <option value="ru">Россия +7</option>
+                    <option value="by">Белоруссия +375</option>
+                  </select>
+
+                  <input id="reg-tel" class="registration__input registration__input--phone" type="tel" name="tel" required>
+
+                </div>
+
+              </label>
+
+              <label for="reg-mail" class="registration__label">
+
+                Эл. почта
+
+                <input id="reg-mail" class="registration__input" type="email" name="email" required>
+
+              </label>
+
+              <label for="reg-pass" class="registration__label">
+
+                Пароль
+
+                <input id="reg-pass" class="registration__input registration__input--pass" type="password"
+                  name="password" required>
+
+                Пароль должен быть не менее 6 символов, содержать цифры и латинские буквы, в том числе заглавные, и не
+                должен совпадать
+                с именем и эл. почтой
+
+              </label>
+
+              <p class="registration__text">
+
+                Регистрируясь, вы соглашаетесь с пользовательским соглашением
+
+              </p>
+
+              <button class="registration__btn" type="submit">
+
+                Зарегистрироваться
+
+              </button>
+
+              <a class="registration__error" href="#login" rel="modal:open">
+
+                Я уже зарегистрирован
+
+              </a>
+
+            </div>
+
+            <span class="registration__line">или</span>
+
+            <span class="registration__subtitle">
+
+              Зарегистрироваться как пользователь
+
+            </span>
+
+            <div class="registration__item registration__item--social">
+
+              <button class="registration__btn registration__btn--create" type="submit">
+
+                <svg class="registration__btn-icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+
+                Facebook
+
+              </button>
+
+              <button class="registration__btn registration__btn--create" type="submit">
+
+                <svg class="registration__btn-icon">
+                  <use xlink:href="images/sprite.svg#google1"></use>
+                </svg>
+
+                Google
+
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

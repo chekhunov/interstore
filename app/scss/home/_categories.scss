@@ -1,0 +1,294 @@
+.categories {
+  &__title {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: -80px;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+    color: $title;
+    padding-left: 235px;
+  }
+}
+
+.slider-top {
+  &__inner {
+    margin-top: 60px;
+    position: relative;
+    width: 100%;
+    background-color: #fcd7b6;
+  }
+
+  &__items {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    max-height: 470px;
+    margin: auto;
+    padding: 0px 0 45px;
+  }
+
+  &__item {
+    padding: 10px;
+  }
+
+  &__top {
+    display: flex;
+
+    margin-bottom: 20px;
+  }
+
+  &__bottom {
+    display: flex;
+  }
+
+  &__left {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  &__title {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $title;
+    @extend %rubik-500;
+
+    &--middle {
+      height: 50px;
+      margin-top: 30px;
+      font-size: 34px;
+      color: $default;
+    }
+
+    &--big {
+      font-size: 34px;
+    }
+  }
+
+  &__box {
+    outline: transparent;
+    transition: background-color 0.5s;
+
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+
+    &--yellow {
+      background-color: rgb(247, 242, 109);
+      // background-color: rgb(237, 237, 9);
+    }
+
+    &--red {
+      background-color: rgb(254, 21, 21);
+    }
+
+    &--grey {
+      background-color: rgb(199, 199, 199);
+    }
+
+    &--blue {
+      background-color: rgb(139, 139, 255);
+    }
+
+    &--white {
+      margin-right: 20px;
+      margin-top: 20px;
+      background-color: rgb(229, 226, 226);
+    }
+
+    &--bluelight {
+      background-color: rgb(161, 213, 255);
+    }
+  }
+
+  &__link {
+    height: 150px;
+    width: 310px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    overflow: hidden;
+    border: 3px solid white;
+    -webkit-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.5);
+    -moz-box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.5);
+    box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.5);
+
+    &:hover {
+      background-color: #7c849b;
+      .slider-top__title {
+        color: white;
+      }
+    }
+
+    &--middle {
+      flex-direction: column;
+      height: 320px;
+      width: 310px;
+    }
+
+    &--big {
+      height: 320px;
+      width: 640px;
+    }
+  }
+
+  &__img {
+    padding: 5px 0;
+    max-width: 150px;
+    height: inherit;
+    object-fit: contain;
+
+    &--middle {
+      max-width: 200px;
+    }
+
+    &--big {
+      max-width: 250px;
+    }
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+
+  li {
+    padding: 0 5px;
+
+    button {
+      width: 30px;
+      height: 10px;
+      font-size: 0;
+      background-color: grey;
+      color: $title;
+      border: none;
+      transition: bacground-color 0.5s, opacity 0.5s;
+
+      &:focus {
+        outline: transparent;
+      }
+      &:hover {
+        background-color: $default;
+        opacity: 0.7;
+      }
+    }
+
+    &.slick-active {
+      button {
+        background-color: #00bbd3;
+      }
+    }
+  }
+}
+
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 200px;
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+
+  border: none;
+  outline: white;
+  cursor: pointer;
+  padding: 0;
+}
+
+.slick-prev,
+.slick-prevbottom {
+  left: -130px;
+
+  &::before {
+    content: url("../images/sprite.svg#left-arrow");
+  }
+}
+
+.slick-next,
+.slick-nextbottom {
+  right: -130px;
+
+  &::after {
+    content: url("../images/sprite.svg#rigth-arrow");
+  }
+}
+
+.slider-bottom {
+  position: relative;
+  width: 100%;
+  top: 600px;
+
+  &__items {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1320px;
+    max-height: 470px;
+    margin: auto;
+    padding: 0px 0 45px;
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__img {
+    padding: 5px 0;
+    max-width: 150px;
+    height: inherit;
+    object-fit: contain;
+
+    &--middle {
+      max-width: 200px;
+    }
+
+    &--big {
+      max-width: 250px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slick-prevbottom,
+  .slick-nextbottom {
+    position: absolute;
+    top: 35px;
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+
+    border: none;
+    outline: white;
+    cursor: pointer;
+    padding: 0;
+  }
+}

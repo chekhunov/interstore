@@ -1,0 +1,130 @@
+@import "mixins";
+
+html,
+body {
+  height: 100%; // 1 задаем чтоб footer прижать к низу
+}
+
+body {
+  display: flex; // 2 прижимаем footer
+  flex-direction: column; // 3 прижимаем footer
+  font-size: 14px;
+  color: $default;
+  background-color: white;
+  @extend %dmsans-400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  &--big {
+    max-width: 1800px;
+  }
+}
+
+.main {
+  flex-grow: 1; // 4 для того чтоб прижать footer к низу
+}
+
+a,
+button {
+  outline: transparent;
+  cursor: pointer;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.logo {
+  margin-right: 15px;
+}
+
+.modal-box {
+  position: fixed;
+  display: none;
+  top: 17%;
+  right: 32%;
+  width: 100%;
+  max-width: 36%;
+  padding: 50px;
+  background-color: white;
+  color: $default;
+  border-radius: 5px;
+  box-shadow: 0.2px 0.6px 0.5px 0.5px;
+  z-index: 1;
+}
+
+.modal-title {
+  font-size: 24px;
+  line-height: 0;
+  color: $title;
+  text-align: center;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 5px;
+    background-color: $default;
+  }
+}
+
+.jquery-modal {
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    content: "";
+  }
+}
+
+.close-modal {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  font-size: 0;
+  border: 2px solid #ccc;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  background-color: rgba(61, 61, 61, 0.8);
+  -webkit-box-shadow: 0px 0px 10px #000;
+  -moz-box-shadow: 0px 0px 10px #000;
+  box-shadow: 0px 0px 10px #000;
+  text-align: center;
+  text-decoration: none;
+  font-weight: normal;
+  line-height: 20px;
+  -webkit-transition: all ease 0.8s;
+  -moz-transition: all ease 0.8s;
+  -ms-transition: all ease 0.8s;
+  -o-transition: all ease 0.8s;
+  transition: all ease 0.8s;
+}
+.close-modal:before {
+  color: rgba(255, 255, 255, 0.9);
+  content: "X";
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.9);
+  font-size: 12px;
+  @extend %rubik-300;
+}
+.close-modal:hover {
+  background-color: rgba(252, 20, 0, 0.8);
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}

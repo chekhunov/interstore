@@ -1,0 +1,175 @@
+<header class="header">
+
+  <div class="container container--big">
+
+    <div class="header__top">
+
+      <div class="header__contacts">
+
+        <div class="header__phones">
+
+          <svg class="header__icon">
+            <use xlink:href="images/sprite.svg#tel"></use>
+          </svg>
+
+          <p class="header__modal">
+            <a class="header__modal-link" href="#contact" rel="modal:open">
+              
+              +38(099) 444-25-87
+
+            </a>
+          </p>
+
+          @@include('../components/_modal-contact.html')
+
+        </div>
+
+        <ul class="header__links">
+
+          <li class="header__item">
+
+            <a class="header__link" href="#">
+
+              Контакты
+
+            </a>
+
+          </li>
+
+          <li class="header__item">
+
+            <a class="header__link" href="#">
+
+              Помощь
+
+            </a>
+
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="header__inner">
+
+        <div class="header__languages">
+
+          <button class="header__lang header__lang--active">
+
+            RU
+
+          </button>
+
+          <button class="header__lang">
+
+            UA
+
+          </button>
+
+          <button class="header__lang">
+
+            ENG
+
+          </button>
+
+        </div>
+
+        <select class="header__city" name="select">
+
+            <option value="value1" selected>Харьков</option>
+
+            <option value="value2">Значение 2</option>
+
+        </select>
+
+        <div class="header__user">
+
+          <svg class="header__user-icon">
+            <use xlink:href="images/sprite.svg#user"></use>
+          </svg>
+
+          <p class="header__modal">
+            <a class="header__modal-link" href="#login" rel="modal:open">
+          
+              Войдите в личный кабинет
+          
+            </a>
+          </p>
+
+          @@include('../components/_modal-login.html')
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="header__bottom">
+
+      <a class="logo" href="index.html">
+
+        <img class="logo__img" src="images/header/logo-line.png" alt="logo images">
+
+      </a>
+
+      <button class="header__menu-dropdown">
+
+        <svg class="header__icon-dropdown">
+          <use xlink:href="images/sprite.svg#menu-dropdown"></use>
+        </svg>
+
+        <span class="header__btn-dropdown">
+          
+          Каталог товаров
+        
+        </span>
+
+      </button>
+
+      <form class="header__form" action="#">
+
+        <label for="h-search" class="header__label">Search</label>
+
+        <input id="h-search" class="header__form-input" type="text" name="Search" placeholder="Поиск..." required>
+
+        <button class="header__searchform-microphone" type="button" aria-label="Голосовой набор">
+
+          <svg class="header__micon-icon">
+            <use xlink:href="images/sprite.svg#micon"></use>
+          </svg>
+
+        </button>
+
+        <button class="header__searchform-btn" type="submit">
+
+          Найти
+
+        </button>
+
+      </form>
+
+      <div class="header__order">
+
+        <a class="header__compare" href="#">
+
+          <svg class="header__compare-icon">
+            <use xlink:href="images/sprite.svg#compare"></use>
+          </svg>
+
+        </a>
+
+        <a class="header__basket" href="#">
+
+          <svg class="header__basket-icon">
+            <use xlink:href="images/sprite.svg#basket"></use>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</header>

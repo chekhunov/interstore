@@ -1,0 +1,14 @@
+@import 'vars';  //переменные для цвета для шрифта
+@import 'fonts'; // подключение шрифтов
+@import 'reset'; //сброс всех стилей
+@import 'global'; // подключение глобальных стилей типо reset.css, то что на body для сылок
+@import 'libs'; // адаптив
+@import 'media'; // адаптив
+
+@import "components/header";
+@import "components/modal-contacts";
+@import "components/modal-login";
+@import "components/card-topproducts";
+@import "home/home";
+@import "recovery/recovery";
+@import "registration/registration";

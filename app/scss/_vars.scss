@@ -1,0 +1,81 @@
+$links: #7b7b7b; //сылки
+$default: #a3bbc8; //шрифт
+$title: #243f4d; // заголовки
+$icon: #122538;
+$outline-slider: #fcd7b6;
+$text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+
+%display-aligth {
+  display: flex;
+  align-items: center;
+}
+
+%dmsans-400 {
+  font-family: "DMSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%dmsans-500 {
+  font-family: "DMSans-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%dmsans-700 {
+  font-family: "DMSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%poppins-600 {
+  font-family: "Poppins-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+%poppins-700 {
+  font-family: "Poppins-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%rubik-300 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+}
+
+%rubik-400 {
+  font-family: "Rubik-Regular", sans-serif;
+  font-weight: 400;
+}
+
+%rubik-500 {
+  font-family: "Rubik-Medium", sans-serif;
+  font-weight: 500;
+}
+
+%rubik-700 {
+  font-family: "Rubik-Bold", sans-serif;
+  font-weight: 700;
+}
+
+%checkbox-hidden {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  position: absolute;
+}
+
+%checkbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  font-size: 16px;
+  color: $title;
+  border-radius: 5px;
+  @extend %rubik-400;
+}
+
+@function max($numbers...) {
+  @return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+  @return m#{i}n(#{$numbers});
+}

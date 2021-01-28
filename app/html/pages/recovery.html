@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Интернет магазин | Recovery</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  @@include('../components/_header.html')
+
+  <main class="main">
+
+    <div class="recovery">
+
+      <div class="container">
+
+        <div class="recovery__wrapper">
+
+          <span class="modal-title">
+
+            Вход
+
+          </span>
+
+          <form class="recovery__form" action="#">
+
+            <div class="recovery__item recovery__item--form">
+
+              <label for="rec-in" class="recovery__label">
+
+                Имя, эл. почта или телефон
+
+                <input id="rec-in" class="recovery__input" type="email" name="email" required>
+
+              </label>
+
+              <button class="recovery__btn" type="submit">
+
+                Получить временный пароль
+
+              </button>
+
+              <a class="recovery__error" href="#login" rel="modal:open">
+
+                Я вспомнил свой пароль
+
+              </a>
+
+            </div>
+
+            <span class="recovery__line">или</span>
+
+            <span class="recovery__subtitle">
+
+              Войти как пользователь
+
+            </span>
+
+            <div class="recovery__item recovery__item--social">
+
+              <button class="recovery__btn recovery__btn--create" type="submit">
+
+                <svg class="recovery__btn-icon">
+                  <use xlink:href="images/sprite.svg#facebook"></use>
+                </svg>
+
+                Facebook
+
+              </button>
+
+              <button class="recovery__btn recovery__btn--create" type="submit">
+
+                <svg class="recovery__btn-icon">
+                  <use xlink:href="images/sprite.svg#google1"></use>
+                </svg>
+
+                Google
+
+              </button>
+
+            </div>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

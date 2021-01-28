@@ -1,0 +1,253 @@
+.header {
+  width: 100%;
+  padding: 8px 0 10px;
+  background-color: $icon;
+
+  &__top {
+    height: 20px;
+    margin-bottom: 5px;
+    @extend %display-aligth;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+
+  &__contacts,
+  &__phones,
+  &__inner,
+  &__languages,
+  &__user,
+  &__order {
+    @extend %display-aligth;
+  }
+
+  &__modal-link {
+    height: 20px;
+    margin-right: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  &__modal-link,
+  &__link,
+  &__lang,
+  &__city {
+    transition: text-decoration 0.5s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 2px;
+  }
+
+  &__lang {
+    display: flex;
+    margin-left: -6px;
+    background-color: transparent;
+    color: white;
+    align-items: center;
+    text-transform: uppercase;
+    border: none;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 1px;
+      height: 10px;
+      margin-left: 5px;
+      margin-bottom: 1px;
+      background-color: $links;
+    }
+
+    &:last-child::after {
+      content: none;
+      margin-left: 0;
+    }
+
+    &--active {
+      color: $default;
+    }
+  }
+
+  &__city {
+    margin: 0 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+
+  &__user-link {
+    color: white;
+  }
+
+  &__user-icon {
+    fill: white;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    color: white;
+  }
+
+  &__menu-dropdown {
+    width: 15%;
+    height: 40px;
+    @extend %display-aligth;
+    margin-right: 15px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 3px;
+    transition: color 0.3s, background-color 0.5s;
+
+    &:hover {
+      background-color: white;
+      color: black;
+    }
+
+    &--active {
+      background-color: white;
+      color: black;
+    }
+  }
+
+  &__icon-dropdown {
+    fill: grey;
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+    transition: fill 0.3s;
+
+    &:hover {
+      fill: black;
+    }
+  }
+
+  &__form {
+    @extend %display-aligth;
+    width: 60%;
+    margin-right: 15px;
+  }
+
+  &__label {
+    font-size: 0;
+  }
+
+  &__form-input {
+    width: 100%;
+    height: 40px;
+    padding: 20px 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+
+    &:hover {
+      background-color: rgb(244, 240, 240);
+    }
+
+    &:focus {
+      outline: $outline-slider;
+    }
+
+    &:placeholder-shown {
+      font-size: 16px;
+    }
+  }
+
+  &__searchform-microphone {
+    position: relative;
+    height: 40px;
+    padding-left: 0px;
+    margin: 0 -1px;
+    background-color: white;
+    border: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 1px;
+      margin-top: 4px;
+      background-color: grey;
+      opacity: 0.5;
+    }
+
+    &:hover {
+      background-color: rgb(244, 240, 240);
+    }
+  }
+
+  &__micon-icon {
+    fill: grey;
+    width: 40px;
+    height: 20px;
+    margin-top: 5px;
+    margin-right: -6px;
+  }
+
+  &__searchform-btn {
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    background-color: $default;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #7f9cac;
+    }
+  }
+
+  &__compare-icon,
+  &__basket-icon {
+    fill: grey;
+    width: 39px;
+    height: 39px;
+    margin-bottom: -3px;
+
+    &:hover {
+      fill: white;
+    }
+  }
+
+  &__basket-icon {
+    width: 33px;
+    height: 39px;
+  }
+
+  &__compare {
+    margin-right: 15px;
+  }
+
+  
+}
